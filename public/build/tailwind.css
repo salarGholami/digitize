@@ -473,6 +473,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .left-0{
   left: 0px;
 }
+.top-32{
+  top: 8rem;
+}
+.top-28{
+  top: 7rem;
+}
 .z-10{
   z-index: 10;
 }
@@ -570,6 +576,36 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-2{
   height: 0.5rem;
 }
+.max-h-\[\]{
+  max-height: ;
+}
+.max-h-\[c\]{
+  max-height: c;
+}
+.max-h-\[calk\]{
+  max-height: calk;
+}
+.max-h-\[cal\]{
+  max-height: cal;
+}
+.max-h-\[calc\]{
+  max-height: calc;
+}
+.max-h-\[calc\(\)\]{
+  max-height: calc();
+}
+.max-h-\[calc\(100vh\)\]{
+  max-height: calc(100vh);
+}
+.max-h-\[calc\(100vh_-_14\)\]{
+  max-height: calc(100vh - 14);
+}
+.max-h-\[calc\(100vh_-_140p\)\]{
+  max-height: calc(100vh - 140p);
+}
+.max-h-\[calc\(100vh_-_140px\)\]{
+  max-height: calc(100vh - 140px);
+}
 .w-7{
   width: 1.75rem;
 }
@@ -651,6 +687,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .gap-x-0{
   -moz-column-gap: 0px;
        column-gap: 0px;
+}
+.overflow-auto{
+  overflow: auto;
 }
 .rounded{
   border-radius: 0.25rem;
