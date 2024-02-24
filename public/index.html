@@ -39,39 +39,41 @@
       </div>
     </div>
     <!-- desktop navbar -->
-    <nav class="bg-white p-4 shadow-lg sticky z-10 top-0 flex items-center justify-between">
-      <ul class="flex items-center gap-x-4 text-slate-800 text-lg">
-        <li>
-          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md ransition-all duration-500" href="#">LOGO</a>
-        </li>
-        <li>
-          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-500" href="#">خانه</a>
-        </li>
-        <li>
-          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-500" href="#">لپ تاپ</a>
-        </li>
-        <li>
-          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md ransition-all duration-500" href="#">ساعت هوشمند</a>
-        </li>
-        <li>
-          <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-500" href="#">تلفن همراه</a>
-        </li>
-      </ul>
-      <!-- search bar -->
-      <div class="flex-1 max-w-2xl">
-        <div class="bg-gray-100 p-1 rounded-lg flex items-center">
-          <span class="ml-3 mr-1">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg
-          ></span>
-          <input type="text" placeholder="نام محصول، برند، یا رنگ..." class="focus:outline-none bg-transparent w-full p-2 text-slate-800" />
+    <nav class="bg-white hidden md:block p-4 shadow-lg sticky z-10 top-0 mb-8">
+      <div class="container mx-auto 2xl:max-w-screen-2xl flex items-center justify-between">
+        <ul class="flex items-center gap-x-0 lg:gap-x-4 text-slate-800 lg:text-lg">
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100 rounded-md ransition-all duration-500" href="#">LOGO</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-500" href="#">خانه</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-500" href="#">لپ تاپ</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100 rounded-md ransition-all duration-500" href="#">ساعت هوشمند</a>
+          </li>
+          <li>
+            <a class="block px-4 py-2 hover:bg-gray-100 rounded-md transition-all duration-500" href="#">تلفن همراه</a>
+          </li>
+        </ul>
+        <!-- search bar -->
+        <div class="flex-1 max-w-xl mr-4">
+          <div class="bg-gray-100 p-1 rounded-lg flex items-center">
+            <span class="ml-3 mr-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg
+            ></span>
+            <input type="text" placeholder="نام محصول، برند، یا رنگ..." class="focus:outline-none bg-transparent w-full p-2 text-slate-800" />
+          </div>
         </div>
       </div>
     </nav>
     <!-- content -->
-    <div class="grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8">
+    <div class="md:px-4 lg:px-6 container mx-auto max-w-screen-2xl grid grid-cols-12 md:grid-rows-[55px_minmax(500px,_1fr)] md:gap-8">
       <!-- sidebar -->
-      <div class="hidden md:block col-span-4 lg:col-span-3 row-span-2">
+      <div class="hidden md:block col-span-4 lg:col-span-3 xl:col-span-2 row-span-2">
         <div class="bg-white p-5 rounded-xl">
           <!-- ctegories -->
           <div class="mb-7">
@@ -247,7 +249,7 @@
         </div>
       </div>
       <!-- sort section -->
-      <div class="hidden md:block col-span-8 lg:col-span-9">
+      <div class="hidden md:block col-span-8 lg:col-span-9 xl:col-span-10">
         <div x-data="{sort : 1, activeClass: 'text-slate-800 font-bold'}" class="bg-white px-4 flex items-center gap-x-4 text-gray-400 rounded-lg">
           <div class="bg-orange-100 p-1 rounded-md flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 stroke-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -273,7 +275,7 @@
         </div>
       </div>
       <!-- products section -->
-      <div class="col-span-12 md:col-span-8 lg:col-span-9">
+      <div class="col-span-12 md:col-span-8 lg:col-span-9 xl:col-span-10">
         <div
           x-data="{
         products : [
