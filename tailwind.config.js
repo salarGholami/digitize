@@ -3,9 +3,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"vazir"'],
+        sans: ["iranyekan"],
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("@tailwindcss/forms")({
+      strategy: "class",
+    }),
+  ],
 };
