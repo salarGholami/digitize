@@ -552,9 +552,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .-mr-1{
   margin-right: -0.25rem;
 }
-.mb-10{
-  margin-bottom: 2.5rem;
-}
 .mb-1{
   margin-bottom: 0.25rem;
 }
@@ -652,6 +649,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .flex-col{
   flex-direction: column;
 }
+.flex-wrap{
+  flex-wrap: wrap;
+}
 .items-center{
   align-items: center;
 }
@@ -687,6 +687,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .gap-y-9{
   row-gap: 2.25rem;
+}
+.gap-y-3{
+  row-gap: 0.75rem;
 }
 .overflow-y-auto{
   overflow-y: auto;
@@ -756,8 +759,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(74 222 128 / var(--tw-bg-opacity));
 }
-.to-slate-800{
-  --tw-gradient-to: #1e293b;
+.bg-red-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 226 226 / var(--tw-bg-opacity));
 }
 .stroke-slate-800{
   stroke: #1e293b;
@@ -836,6 +840,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .font-thin{
   font-weight: 100;
+}
+.font-light{
+  font-weight: 300;
 }
 .text-slate-800{
   --tw-text-opacity: 1;
@@ -938,17 +945,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:h-9{
     height: 2.25rem;
   }
+  .sm\:h-6{
+    height: 1.5rem;
+  }
   .sm\:w-8{
     width: 2rem;
   }
   .sm\:w-5{
     width: 1.25rem;
   }
-  .sm\:w-6{
-    width: 1.5rem;
-  }
   .sm\:w-9{
     width: 2.25rem;
+  }
+  .sm\:w-6{
+    width: 1.5rem;
   }
   .sm\:gap-x-4{
     -moz-column-gap: 1rem;
